@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="">
+<header>
+    <meta charset="utf-8" />
+    <title> RECUPERACION </title>
+</header>
+<body>
+
+    <h2> PRIMER PASO: </h2>
+        <p> Para ello necesitamos su correo electronico con el cual se registro y esta guardado en nuestra <strong> base de datos </strong> </p>
+        
+        <fieldset>
+            <legend> CORREO </legend>
+            <center>
+                <label for="correo"> Ingrese su correo registrado </label><br><br>
+                <input typeof="email" id="correo" name="email">
+                <br>
+            </center>
+        </fieldset>
+        
+    <h2> SEGUNDO PASO </h2>
+        <p> Ya hecho el 1°paso necesitamos una foto de tu DNI para <strong> validar su identidad </strong> </p>
+        <fieldset>
+            <legend> DNI </legend>
+            <center>
+                <label for="foto_DNI"> Suba la foto de su DNI </label><br>
+                <input type="file" id="foto_DNI" name="DNI">
+            </center>
+        </fieldset>
+
+    <h2> TERCER PASO (opcional) </h2>
+        <p> Agradeceriamos si deja un comentario </p>
+        <fieldset>
+            <legend> Comentarios </legend>
+                <label for="coment"> Comentarios </label><br>
+                <textarea name="textar" id="coment" cols="40" rows="10"></textarea>
+        </fieldset>
+        
+</body>
+</html>
