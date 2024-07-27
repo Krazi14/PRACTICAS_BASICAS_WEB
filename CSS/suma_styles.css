@@ -1,0 +1,22 @@
+h1{
+    color:hsla(160, 66%, 29%, 0.964);
+    font-family: "Comic Neue", cursive;
+    font-size: 48px;
+    text-align: center;
+    text-shadow: 2px 2px 5px black;
+}
+
+label{
+    color:darkgreen;
+}
+
+.valoru{
+    color:firebrick;
+    font-family: "Coming Soon", cursive;
+    font-size: 18px;
+    text-align: center;
+}
+
+p.parrafo1::first-letter{
+    font-size: 48px;
+}

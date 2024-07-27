@@ -1,13 +1,22 @@
+body{
+    background-image: url(https://areajugones.sport.es/wp-content/uploads/2020/04/dragon-ball-23.jpg.webp);
+}
+
+
 h1{
-    color:aqua;
+    color:rgb(24, 70, 70);
     font-family:'Times New Roman', Times, serif;
 }
 
 h2{
-    color:blue;
+    color:rgb(128, 128, 247);
 }
 
 nav{
-    background-color: darkred;
+    background-color: hsl(0, 100%, 27%);
     color:blanchedalmond;
+}
+
+p{
+    color:#ff7f50;
 }
