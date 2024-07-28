@@ -1,22 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Coming+Soon&family=Playwrite+AR:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body{
-    background-image: url(https://areajugones.sport.es/wp-content/uploads/2020/04/dragon-ball-23.jpg.webp);
+    background-color: rgb(30, 59, 84);
+    margin: 0%;
 }
 
 
 h1{
-    color:rgb(24, 70, 70);
+    color:rgb(105, 200, 200);
     font-family:'Times New Roman', Times, serif;
 }
 
-h2{
+#suma{
     color:rgb(128, 128, 247);
+    background-color: crimson;
+    text-align: center;
+    font-family: "Comic Neue", cursive;
+    font-size: 24px;
+    padding: 20px 10% ;
+    border: 4px solid black;
+    border-radius: 50px;
+    margin: 5px 10px;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+
+#descripcion{
+    color: maroon;
+    background-color: khaki;
+    font-family: "Playwrite AR", cursive;
+    font-size: 18px;
+    padding: 7px 4%;
+    border: 4px solid black;
+    border-radius: 70px;
+    margin: 5px 10px;
+    width: 500px;
+    height: 210px;
+    display: inline-block;
 }
 
 nav{
     background-color: hsl(0, 100%, 27%);
-    color:blanchedalmond;
+    height: 50px;
 }
 
-p{
-    color:#ff7f50;
+a.navegacion{
+    color:rgb(62, 12, 112);
+    background-color: burlywood;
+    font-size: 18px;
+    font-family: "Playwrite AR", cursive;
+    border: 2px solid black;
+    margin: 10% 4px;
+    padding: 0px 8px;
+    width: 100px;
+    height: 10px;
+}
+
+a.navegacion:hover{
+    color: darkorange;
 }
