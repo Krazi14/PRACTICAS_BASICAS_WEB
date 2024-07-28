@@ -8,6 +8,7 @@ h1{
     font-size: 48px;
     text-align: center;
     text-shadow: 2px 2px 5px black;
+    margin: 30px 0px;
 }
 
 label{
@@ -21,12 +22,63 @@ label{
     text-align: center;
 }
 
-p{
-    width: 450px;
+p.parrafo1{
+    width: 200px;
+    text-align: justify;
     margin-left: auto;
     margin-right: auto;
 }
 
 p.parrafo1::first-letter{
     font-size: 48px;
+    color: burlywood;
+    float: left;
+    background-color: crimson;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    margin-right: 5px;
+}
+
+.parrafo2{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: brown;
+    text-transform: lowercase;
+    font-weight: bold;
+}
+
+a:hover{
+    color: darkgoldenrod;
+}
+
+.linearriba{
+    text-decoration: underline;
+    color: blueviolet;
+}
+
+.cursiva{   
+    font-weight: bold;
+    font-style: italic;
+    color: khaki;
+    background-color: black;
+}
+
+.borde{
+    border: 10px dashed gray;
+    /*margin-left: 30%;
+    margin-right: 30%;*/
+    margin: 0% 40% 0% 40%;
+    
+}
+
+p.info{
+    margin: 0% 50% 0% 30%;
+    text-align: center;
+    background-color: lightskyblue;
+    color: forestgreen;
+    width: 40%;
+    
 }
