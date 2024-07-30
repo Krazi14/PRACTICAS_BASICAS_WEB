@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Coming+Soon&family=Playwrite+AR:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 body{
-    background-color: rgb(30, 59, 84);
+    background-color: rgb(89, 148, 201);
     margin: 0%;
 }
 
@@ -24,6 +24,10 @@ h1{
     width: 40px;
     height: 40px;
     display: inline-block;
+    position: relative;
+    top: -70px;
+    left: 20%;
+    
 }
 
 #descripcion{
@@ -38,11 +42,8 @@ h1{
     width: 500px;
     height: 210px;
     display: inline-block;
-}
-
-nav{
-    background-color: hsl(0, 100%, 27%);
-    height: 50px;
+    position: relative;
+    left: 25%;
 }
 
 a.navegacion{
@@ -53,10 +54,89 @@ a.navegacion{
     border: 2px solid black;
     margin: 10% 4px;
     padding: 0px 8px;
-    width: 100px;
-    height: 10px;
+}
+
+#nav{
+    background-color: maroon;
+    width: 32%;
+    padding: 30px 10px;
+    position: sticky;
+    top: 0;
 }
 
 a.navegacion:hover{
     color: darkorange;
+}
+
+p{
+    color:rgb(24, 83, 24);
+    text-align: center;
+    font-size: 26px;
+}
+
+
+.social{
+    text-align: center;
+    padding: 10px;
+    margin: 40px;
+}
+
+.social a:hover{
+    padding: 70px 20px 30px 20px;
+    background-color: lightsalmon;
+}
+
+a.canalyoutube{
+    font-family: "Comic Neue", cursive;
+    margin: 0% 20% 40% 700px;
+    font-size: 38px;
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    background-color: red;
+    border-radius: 9px;
+}
+a.canalyoutube:hover{
+    color:red;
+    background-color: white;
+}
+
+.foto{
+    /* background-image: url("https://i.pinimg.com/564x/5c/19/f2/5c19f22bcf848cda28f56c3f035ddb67.jpg"); */
+    background-repeat: no-repeat;
+    height: 828px;
+    width: 564px;
+    border: 10px solid rgb(97, 61, 0);
+    border-radius: 100px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url("https://i.pinimg.com/564x/5c/19/f2/5c19f22bcf848cda28f56c3f035ddb67.jpg");
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+#yutu{
+    padding: 40px 0px;
+}
+
+.icono{
+    background-image: url(https://www.anmosugoi.com/wp-content/uploads/2024/07/Alisa-Mikhailovna-Kujou-de-Tokidoki-Bosotto-Roshia-go-rompe-internet-con-su-belleza-2-1200x673.webp);
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 15px;
+    right: 0;
+    background-position: 50% 50%;
+    border: 8px solid black;
+    border-radius: 50%;
+}
+
+.icono:hover{
+    background-image: url(https://www.anmosugoi.com/wp-content/uploads/2024/07/Alisa-Mikhailovna-Kujou-de-Tokidoki-Bosotto-Roshia-go-rompe-internet-con-su-belleza-1-1200x683.webp);
+    width: 300px;
+    height: 300px;
+    position: fixed;
+    top: 15px;
+    right: 0;
+    background-position: 40% 50%;
+    border: 8px solid black;
+    border-radius: 50%;
 }
