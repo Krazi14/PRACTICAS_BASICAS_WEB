@@ -3,6 +3,7 @@
 body{
     background-color: rgb(89, 148, 201);
     margin: 0%;
+    perspective: 1000PX; /*SIMPLEMENTE LA PERSPECTICA, JUGAR CON LOS VALORES*/
 }
 
 
@@ -17,17 +18,39 @@ h1{
     text-align: center;
     font-family: "Comic Neue", cursive;
     font-size: 24px;
-    padding: 20px 10% ;
+    padding: 20px 50px ;
     border: 4px solid black;
-    border-radius: 50px;
+    border-radius: 90px;
     margin: 5px 10px;
-    width: 40px;
-    height: 40px;
+    width: 200px;
+    height: 200px;
     display: inline-block;
     position: relative;
     top: -70px;
     left: 20%;
+    /* animation-name: cambiocolor;
+    animation-duration: 2000ms;
+    animation-timing-function: ease-in;
+    animation-delay: 1000ms;
+    animation-iteration-count: 5;
+    animation-direction: alternate;
+    animation-fill-mode: forwards; */
+    animation: cambiocolor 2000ms ease-in 1000ms 5 alternate forwards, tamañoletra 2000ms ease-out 5 forwards;
     
+}
+@keyframes cambiocolor{
+    0%{
+        background-color: crimson;
+        border-radius: 90px;
+    }
+    100%{
+        background-color: lightcoral;
+        border-radius: 150px;
+    }
+}
+@keyframes tamañoletra{
+    0%{font-size: 24px;}
+    100%{font-size: 48px;}
 }
 
 #descripcion{
@@ -127,16 +150,69 @@ a.canalyoutube:hover{
     background-position: 50% 50%;
     border: 8px solid black;
     border-radius: 50%;
+    transition-property: background-image, width, height;
+    transition-delay: 1s;
+    transition-duration: 2000ms, 200ms, 1000ms;
+    transition-timing-function: cubic-bezier(.85,1.01,.92,.38);
 }
 
 .icono:hover{
     background-image: url(https://www.anmosugoi.com/wp-content/uploads/2024/07/Alisa-Mikhailovna-Kujou-de-Tokidoki-Bosotto-Roshia-go-rompe-internet-con-su-belleza-1-1200x683.webp);
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     position: fixed;
     top: 15px;
     right: 0;
     background-position: 40% 50%;
     border: 8px solid black;
     border-radius: 50%;
+}
+
+.bar{
+    margin: 20px 10px;
+    border: 4px solid black;
+    width: 100%;
+    height: 50px;
+    border-radius: 400px;
+    overflow: hidden;
+}
+
+.porcentaje{
+    background-color: aquamarine;
+    width: 10%;
+    height: 100%;
+    transition: width 1000ms ease-in 500ms;
+}
+
+.porcentaje:hover{
+    background-color: blue;
+    width: 100%;
+}
+
+#transform{
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Wikipe-tan_full_length.svg/1200px-Wikipe-tan_full_length.svg.png");
+    width: 1000px;
+    height: 1000px;
+    border: 4px solid black;
+    margin: 0px 25%;
+    padding: 40px 400px;
+    box-sizing: border-box;
+    transition: transform 2000ms;
+    /* transform-origin: top left;*/  /*DESCUBRIR EL PUNTOD DE ORIGEN AL APLICAR TRANSFORM*% */
+}
+
+#transform:hover{
+    /* transform: translate(60px, 40px); lo va hacer trasladar de un lado a otro */
+    /* transform: rotate(45deg); lo hara rotar en el mismo eje */
+    /* transform: scale(0.5, 0.5); lo agrandará o achicara depende de los valores */
+    /*AHORA EN 3D*/
+    /* transform: rotateX(180deg); */
+    transform: rotateY(180deg);
+    /* transform: rotateZ(90deg); */
+}
+
+#letra{
+    font-size: 48px;
+    text-decoration: line-through;
+    text-shadow: 10px 2px black;
 }
