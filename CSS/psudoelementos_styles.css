@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main-container{
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 5px 5px ;
+    padding: 60px;
+    margin: 190px auto;
+    width: 1300px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+}
+h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+p{
+    text-align: justify;
+    margin-bottom: 30px;
+}
+ol{
+    margin-bottom: 30px;
+}
+li{
+    margin-left: 50px;
+}
+
+
+
+h1::before{
+    content: "👉";
+}
+h1::after{
+    content: "👈";
+}
+p::first-letter{
+    font-size: 80px;
+    background-color: yellowgreen;
+}
+p::first-line{
+    font-style: italic;
+}
+p::selection{
+    background-color: blueviolet;
+}
+ol li::marker{
+    color: green;
+}
+ul li::marker{
+    color: red;
+}

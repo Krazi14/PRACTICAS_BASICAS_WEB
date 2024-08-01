@@ -1,0 +1,50 @@
+.main-container{
+    border: 2px solid black;
+    border-radius: 8px;
+    box-shadow: 5px 5px ;
+    padding: 15px 30px;
+    margin: 120px auto;
+    width: 600px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+} 
+
+li:first-child{
+    color: blue;
+}
+li:last-child{
+    color: blue;
+}
+li:nth-child(3n){
+    color: crimson;
+}
+li:nth-last-child(4n){
+    background-color: darkgoldenrod;
+}
+
+p:first-child{
+    color: green;
+}
+p:last-of-type{
+    color:blue
+}
+a:last-child{
+    color: red;
+}
+a:first-of-type{
+    color: blue;
+}
+p:nth-of-type(2n){
+    background-color: blueviolet;
+}
+a:nth-last-of-type(3){
+    background-color: yellow;
+}
+
+p::before{
+    content: "🐱‍🐉";
+}

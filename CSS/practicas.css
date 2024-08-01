@@ -91,3 +91,29 @@ body{
         grid-column: 1 / 6;
     }
 }
+
+.links{
+    background-color: cadetblue;
+    margin: 50px 5px;
+    padding: 40px 40px;
+    width: 200px;
+    border: 4px solid black;
+}
+
+a{
+    font-size: 24px;
+    color: rgb(248, 194, 0);
+}
+a:visited{
+    color:rgb(109, 59, 41);
+}
+
+a:hover{
+    text-decoration: none;
+    color: deeppink;
+}
+
+a:active{
+    color: white;
+    background-color: black
+}

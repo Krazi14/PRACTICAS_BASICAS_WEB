@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Formulario.css">
+    <title>Pseudoclases | CodingTube</title>
+</head>
+<body>
+    <div class="main-container">
+        <h1>Pseudoclases en formularios</h1>
+        
+        <form action="">
+            <input type="text" placeholder="Nombre:"><br>
+            <input type="text" placeholder="Apellido:"><br>
+            <input type="text"  placeholder="Nacionalidad" disabled><br><br>
+            <fieldset>
+                <legend>Selecciona una opción</legend>
+                <input type="radio" checked="one" value="male" name="number"> 
+                <label for="one">Uno</label><br>
+                <input type="radio" value="two" name="number">
+                <label for="one">Dos</label><br>
+                <input type="radio" value="three" name="number">
+                <label for="one">Tres</label><br>
+                <input type="radio" value="four" name="number">
+                <label for="one">Cuatro</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Selecciona varias opciones</legend>
+                <input type="checkbox" value="Red"> Rojo<br>
+                <input type="checkbox" value="Blue"> Azul<br>
+                <input type="checkbox" value="Yellow"> Amarillo<br>
+                <input type="checkbox" value="Green"> Verde
+            </fieldset>
+            <br>
+            <input type="number" min="5" max="10" value="7"> <span>Válido entre 5-10</span> <br>
+            <input type="email" value="info@gmail.com"><br>
+
+            <input><span> Opcional</span><br>
+            <input required> <span>Requerido</span>
+
+            <p>Input normal:<br><input value="modifica este texto"></p>
+        
+            <p>Input de solo lectura:<br><input readonly value="no puedes modificar"></p>
+          </form>
+    </div>
+</body>
+</html>
